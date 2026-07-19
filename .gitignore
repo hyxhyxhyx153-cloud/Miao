@@ -1,0 +1,60 @@
+# IDE and local agent state
+/.idea/
+/.agents/
+/.playwright-cli/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Local Android / Gradle state
+/.gradle/
+/.kotlin/
+**/build/
+/captures/
+.externalNativeBuild/
+.cxx/
+local.properties
+**/local.properties
+
+# Node dependencies and generated bundles
+**/node_modules/
+**/dist/
+**/.vite/
+coverage/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Secrets and machine-specific configuration
+**/.env
+**/.env.*
+!server/.env.example
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+
+# Runtime data and logs
+/server/uploads/
+*.log
+*.pid
+*.db
+*.sqlite
+*.sqlite3
+*.dump
+
+# Android release artifacts
+/app/release/
+*.apk
+*.aab
+*.apks
+
+# Local deployment, QA, design and generated release artifacts
+/.deploy/
+/.release/
+/output/
+/.tmp-*
+/1

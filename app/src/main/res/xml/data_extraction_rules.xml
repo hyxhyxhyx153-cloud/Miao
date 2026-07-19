@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- Tokens cannot be restored without the Android Keystore key. -->
+        <exclude domain="sharedpref" path="miao_tokens.xml" />
+        <!-- Room is an offline cache; the server remains the data source. -->
+        <exclude domain="database" path="miao.db" />
+        <exclude domain="database" path="miao.db-shm" />
+        <exclude domain="database" path="miao.db-wal" />
+    </cloud-backup>
+    <device-transfer>
+        <exclude domain="sharedpref" path="miao_tokens.xml" />
+        <exclude domain="database" path="miao.db" />
+        <exclude domain="database" path="miao.db-shm" />
+        <exclude domain="database" path="miao.db-wal" />
+    </device-transfer>
+</data-extraction-rules>

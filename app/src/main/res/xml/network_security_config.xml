@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!--
+        Miao 支持连接用户自行部署的局域网 HTTP 服务。Android 的 domain-config
+        不支持 CIDR 或 IP 通配符，因此逐个列出 192.168.x.x 无法覆盖动态局域网地址。
+        API 客户端仍只会访问构建配置选择的地址；公网部署应配置 HTTPS。
+    -->
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

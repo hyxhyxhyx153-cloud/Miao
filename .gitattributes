@@ -1,0 +1,19 @@
+* text=auto
+
+# Keep cross-platform scripts runnable with the expected line endings.
+gradlew text eol=lf
+*.sh text eol=lf
+*.bat text eol=crlf
+
+# Treat generated/binary assets as binary.
+*.jar binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.gif binary
+*.ico binary
+*.apk binary
+*.aab binary
+*.zip binary
+*.gz binary

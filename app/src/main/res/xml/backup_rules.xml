@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <exclude domain="sharedpref" path="miao_tokens.xml" />
+    <exclude domain="database" path="miao.db" />
+    <exclude domain="database" path="miao.db-shm" />
+    <exclude domain="database" path="miao.db-wal" />
+</full-backup-content>
